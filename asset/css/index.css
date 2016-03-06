@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.header{
+    clear:both;
+    width: 100%;
+}
+.header-top{
+    position: relative;
+    top: 0;
+    left:0;
+}
+.layout{
+    margin: 0 auto;
+    width: 1200px;
+}
+.logo{
+    margin-top: 20px;
+    width: 147px;
+}
+/*search top*/
+.search-top{
+    position: absolute;
+    left:300px;
+    margin-top:30px;
+}
+.search-top .input-wrap{
+    display: inline;
+    float: left;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+.search-top .input-wrap .search-input{
+    width: 502px;
+    height: 30px;
+    background: #fff;
+}
+.search-top .btn-search-top{
+    overflow: hidden;
+    width: 67px;
+    height: 38px;
+    color: #fff;
+    border: none;
+    background: #000;
+}
+/*cart Button*/
+.cartButton{
+    display: inline;
+    float: right;
+    margin-top: 30px;
+    border-radius: 5px;
+    background: #434343;
+    cursor: pointer;
+}
+.cartButton i{
+    display: inline-block;
+    *zoom:1;
+    _display:inline;
+    vertical-align: middle;
+    width: 46px;
+    height: 42px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background:#363636 url("../images/ico.png") no-repeat 7px 5px;
+}
