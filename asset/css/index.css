@@ -130,3 +130,142 @@
     width: 946px;
     height: 429px;
 }
+.container-ad{
+    clear: both;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.container-ad .ad-list{
+    display: inline;
+    float: left;
+    margin-right: 13px;
+}
+.container-ad .recommented{
+    width: 241px;
+    height: 167px;
+    background: #8332c5;
+}
+.container-ad .last{
+    margin-right: 0;
+}
+/**/
+.buy-info{
+    clear: both;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 40px 0;
+    background: #eee;
+}
+.buy-info-item{
+    display: inline;
+    float: left;
+    margin: 0 10px;
+    width: 220px;
+}
+.buy-info-item .info-item-des{
+    overflow: hidden;
+    padding: 10px 0 0 10px;
+}
+.info-item-des strong{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+}
+.info-item-des span{
+    font-size: 12px;
+    color: #666;
+}
+.info-item-des strong,.info-item-des span{
+    display: block;
+}
+
+.row-title{
+    clear: both;
+    margin: 20px 0 0;
+    padding:0 0 10px;
+    border-bottom:1px solid #ddd;
+    font-size: 20px;
+    color: #666;
+}
+.row-wrap{
+    overflow: hidden;
+    padding: 20px 0;
+}
+.row-wrap .row-big-pic{
+    display:inline;
+    float: left;
+}
+.row-other-pro{
+    overflow: hidden;
+    padding-left: 15px;
+}
+.row-other-pro li{
+    display: inline;
+    float: left;
+    width: 229px;
+    height: 172px;
+    border-right:1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.row-other-pro .pro-name{
+    display: block;
+    padding:10px;
+}
+.row-other-pro .pro-pic{
+    display: block;
+    text-align: right;
+}
+
+.tabcon{
+    clear: both;
+    overflow: hidden;
+}
+.tabcon .tab{
+    clear: both;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.tabcon .tab .more{
+    float: right;
+    padding: 18px 0 0;
+    color: #666;
+}
+.tabcon .tab span{
+    display: inline;
+    float: left;
+    margin-right: 20px;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #eee;
+    cursor: pointer;
+}
+.tabcon .tab .active{
+    font-size: 14px;
+    color: #fff;
+    background: #680aba;
+}
+.tabcon .tab span:hover{
+    font-size: 14px;
+    color: #fff;
+    background: #680aba;
+}
+.tab-con li{
+    display: inline;
+    float: left;
+    margin-right: 40px;
+    width: 208px;
+    text-align: center;
+    line-height: 1.8em;
+}
+.tab-con .last{
+    margin-right: 0;
+}
+.tab-con li span{
+    display: block;
+}
+.tab-con button{
+    border: none;
+    cursor: pointer;
+}
