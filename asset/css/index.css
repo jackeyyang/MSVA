@@ -100,7 +100,8 @@
     margin-bottom: 10px;
     height: 48px;
     line-height: 48px;
-    background: #680aba;
+    background: #591a8d;
+    text-align: center;
 }
 .category-title{
     clear: both;
@@ -144,6 +145,19 @@
     width: 241px;
     height: 167px;
     background: #8332c5;
+    text-align: center;
+    line-height: 1.8em;
+}
+.container-ad .recommented span{
+    margin-top: 45px;
+    zoom: 1;
+    display: inline-block;
+    *display:inline;
+    vertical-align: middle;
+    color: #fff;
+}
+.container-ad .recommented a{
+    color: #fff;
 }
 .container-ad .last{
     margin-right: 0;
@@ -198,6 +212,7 @@
 .row-other-pro{
     overflow: hidden;
     padding-left: 15px;
+    height: 345px;
 }
 .row-other-pro li{
     display: inline;
@@ -250,6 +265,9 @@
     font-size: 14px;
     color: #fff;
     background: #680aba;
+}
+.tab-con{
+    display: none;
 }
 .tab-con li{
     display: inline;

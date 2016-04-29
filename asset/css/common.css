@@ -38,3 +38,9 @@ a{ text-decoration: none; color: #333;}
 .inline-block{zoom: 1; display: inline-block;*display: inline;}
 .fl{display: inline; float: left;}
 .fr{ display: inline; float: right;}
+
+.footer{ padding:50px 0 20px; background: #000; color: #4d4d4d; line-height: 1.8em;}
+.footer a{margin: 0 10px; color: #4d4d4d;}
+.footer .menu{margin-left: -15px;color: #4d4d4d;}
+.footer .menu a{ margin: 0 15px; font-size: 16px; color: #9b9b9b;}
+.footer .menu a:hover{ color: #9c53dc;}
