@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件冒泡</title>
+    
+</head>
+    <body>
+        <div class="a">
+            <span class="b">click.event</span>
+        </div>
+        <script type="text/javascript" src="asset/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                // $(".a").click(function(){alert("a");});
+                // $(".b").click(function(e){alert("b");e.stopPropagation();});
+                // $("body").click(function(){alert("body");});
+                $(".b").on('select',function(){
+                    alert('b');
+                    e.stopPropagation();
+                });
+                $(".a").on('select',function(e){
+                    alert('a');
+                });
+                $("body").on('select',function(){
+                    alert('body');
+                });
+                // 
+                $(".b").trigger('select');
+                // $(".a").trigger('select');
+                // $("body").trigger('select');
+
+            });
+        </script>
+    </body>
+</html>
