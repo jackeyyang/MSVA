@@ -3,8 +3,8 @@
  * Created by jackey on 16/4/29.
  */
 
-$(function(){
-    $(document).on('mouseover','.tab span',function(){
+$(function() {
+    $(document).on('mouseover', '.tab span', function() {
         var index = $(this).index();
         $(".tab span").removeClass("active");
         $(this).addClass("active");

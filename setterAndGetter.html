@@ -17,6 +17,7 @@
 			angular.module('myApp',[])
 			.controller('myController',function($scope){
 				$scope.$watch('name',function(name){
+					var name = name;
 					$scope.outValue = name;
 					console.log($scope.outValue);
 				});
