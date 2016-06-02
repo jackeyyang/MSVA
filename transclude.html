@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>getter setter</title>
+		<link rel="stylesheet" href="">
+	</head>
+	<body ng-app="myApp">
+	<div sideboxtitle="Links">
+		<ul>
+			<li sidebox title="jackey">First link</li>
+			<li sidebox title="rose">Second link</li>
+		</ul>
+	</div>
+		
+		<script src="asset/js/angular.js"></script>
+		<script>
+			angular.module('myApp', [])
+				.directive('sidebox', function() {
+					return {
+						restrict: 'EA',
+						replace: true,
+						scope: {
+							title: '@'
+						},
+						transclude: true,
+						template: '<div class="sidebox">\
+									<div class="content">\
+									<h2 class="header">{{ title }}</h2>\
+									<span class="content" ng-transclude>\
+									</span>\
+									</div>\
+									</div>'
+					};
+				});
+		</script>
+	</body>
+</html>

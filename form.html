@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" name="formname">
+    <input type="text" ng-model="ages" jk-directive>
+</form>
+<script src="asset/js/angular.js"></script>
+<script>
+    angular.module('myApp', [])
+            .directive('jkDirective',function(){
+                return {
+                    restrict: 'A',
+                    link: function(scope,element,attrs){
+                        scope.$watch('ages',function(n){
+                            if( n%2 == 0 && n!=0 ){
+                                console.log('不输入偶数');
+                            }
+                        })
+                    }
+                }
+            })
+</script>
+</body>
+</html>

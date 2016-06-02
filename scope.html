@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>getter setter</title>
+		<link rel="stylesheet" href="">
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller='MainController'>
+			Outside myDirective: {{ myProperty }}
+			<div my-directive ng-init="myProperty = 'wow, this is cool'">
+				Inside myDirective: {{ myProperty }}
+			</div>
+		</div>
+		
+		<script src="asset/js/angular.js"></script>
+		<script>
+			angular.module('myApp', [])
+				.controller('MainController', function($scope) {
+				})
+				.directive('myDirective', function() {
+					return {
+						restrict: 'A',
+						scope: {},
+						priority: 100,
+						template: '<div>Inside sss</div>'
+					};
+				});
+		</script>
+	</body>
+</html>

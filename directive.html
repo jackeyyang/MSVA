@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
-		<link rel="stylesheet" href="">
-	</head>
-	<body>
-		<script src="asset/js/angular.js"></script>
-		<script>
-			angular.module('myApp',[])
-			.controller('myController',function($scope){
-				$scope.$watch('site',function(){
-					console.log(formname.inputname.$error);
-				});
-			});
-		</script>
-	</body>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Their URL field:</label>
+<input type="text" ng-model="theirUrl">
+<div my-directive
+     some-attr="theirUrl"
+     my-link-text="Click me to go to Google"></div>
+<script src="asset/js/angular.js"></script>
+<script>
+angular.module('myApp', [])
+.directive('myDirective', function() {
+    return {
+        restrict: 'A',
+        replace: true,
+        scope: {
+            myUrl: '@someAttr', // 经过了修改
+            myLinkText: '@'
+        },
+        template: '\
+        <div>\
+            <label>My Url Field:</label>\
+            <input type="text"\
+                   ng-model="myUrl" />\
+            <a href="{{myUrl}}">{{myLinkText}}</a>\
+        </div>\ '
+    };
+});
+</script>
+</body>
 </html>

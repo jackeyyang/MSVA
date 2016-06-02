@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea ng-disabled="isDisabled">Wait {{seconds}} seconds</textarea>
+<script src="asset/js/angular.js"></script>
+<script>
+    angular.module('myApp', [])
+            .run(function($rootScope, $timeout) {
+                $rootScope.isDisabled = true;
+                $timeout(function() {
+                    $rootScope.isDisabled = false;
+                    $rootScope.seconds = 1;
+                }, 5000);
+            });
+</script>
+</body>
+</html>
